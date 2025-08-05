@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Vault</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        h1 {
+            color: #3b82f6;
+        }
+        .test-box {
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔐 Vault - Test de Conexión</h1>
+    <div class="test-box">
+        <h2>✅ Servidor funcionando correctamente</h2>
+        <p>Si puedes ver esta página, el servidor está funcionando bien.</p>
+        <p>Fecha y hora: <span id="datetime"></span></p>
+        <button onclick="testJS()">Probar JavaScript</button>
+        <div id="js-result"></div>
+    </div>
+
+    <script>
+        // Mostrar fecha y hora
+        document.getElementById('datetime').textContent = new Date().toLocaleString('es-ES');
+        
+        // Probar JavaScript
+        function testJS() {
+            document.getElementById('js-result').innerHTML = '<p style="color: #10b981;">✅ JavaScript funcionando correctamente</p>';
+        }
+    </script>
+</body>
+</html> 

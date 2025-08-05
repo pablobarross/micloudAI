@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault - Tu caja fuerte digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: #1e293b;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3b82f6;
+        }
+        
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #f8fafc;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            background: #3b82f6;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        
+        .btn:hover {
+            background: #2563eb;
+        }
+        
+        .features {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+        
+        .feature-card h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">🔐 Vault</div>
+            <div>
+                <a href="#features" class="btn">Características</a>
+                <a href="#pricing" class="btn">Precios</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <div class="container">
+            <h1>Tu caja fuerte digital en AWS</h1>
+            <p>Almacenamiento seguro en la nube con privacidad y seguridad absoluta</p>
+            <a href="#features" class="btn">Comenzar gratis</a>
+            <a href="#pricing" class="btn">Ver precios</a>
+        </div>
+    </div>
+    
+    <div class="features" id="features">
+        <div class="container">
+            <h2>Características principales</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🔒 Seguridad Absoluta</h3>
+                    <p>Encriptación AES-256, cumplimiento SOC 2, y múltiples capas de protección para tus archivos más importantes.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>☁️ Infraestructura AWS</h3>
+                    <p>Utilizamos Amazon Web Services S3, la infraestructura más confiable y escalable del mundo para tu almacenamiento.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>⚡ Acceso 24/7</h3>
+                    <p>Garantizamos acceso a tus archivos 24/7 con una disponibilidad del 99.9% desde cualquier dispositivo.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🤖 IA Avanzada</h3>
+                    <p>Chat con tus PDFs usando inteligencia artificial para analizar y extraer información de tus documentos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>💰 Precios Justos</h3>
+                    <p>Planes flexibles desde $5/mes con almacenamiento ilimitado y todas las características de seguridad incluidas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🌍 Múltiples Regiones</h3>
+                    <p>Tus datos se replican automáticamente en múltiples regiones de AWS para máxima redundancia y velocidad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        console.log('Vault cargado correctamente');
+        
+        // Función para mostrar mensaje de bienvenida
+        function showWelcome() {
+            alert('¡Bienvenido a Vault! Tu caja fuerte digital en AWS.');
+        }
+        
+        // Mostrar mensaje después de 2 segundos
+        setTimeout(showWelcome, 2000);
+    </script>
+</body>
+</html> 

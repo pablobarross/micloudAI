@@ -7,6 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build": "webpack --mode production",
+    "build:gh-pages": "webpack --mode production --output-path ./docs",
     "dev-client": "webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
